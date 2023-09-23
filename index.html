@@ -6,7 +6,6 @@
     <title>Task1</title>
     <style> 
         .b1:hover +.bar .bar1{
-            /* transition: width 2s; */
             width: 100px;
             background-color: rgb(13, 239, 13);
         }
@@ -57,10 +56,54 @@
             width: 500px;
             background-color: aquamarine;
         }
+        a{
+            display: block;
+            text-decoration: none;
+            color: black;
+            line-height: 40px;
+        }
+        nav{position: relative;
+            top: 0px;
+            background-color: cyan;
+            width: 70px;
+            text-align: center;
+        }
+        .navbar{
+            position: relative;
+            top: 0px;
+        }
+        .cnt{
+            position: absolute;top: 20px;
+            left: 100px;
+        }
+        .nav .about:hover + .cnt h1 p{
+            visibility: visible;
+            color: red;
+        }
+        #who{
+            display: none;
+            border: 1px solid;
+            width: 150px;
+            background-color: pink;
+        }
+        #btn:hover + #who{
+            display: inline;
+        }
+        #vis1{visibility: hidden;
+            border: 1px solid;
+            width: 150px;
+            background-color: pink;
+
+        }
+        #vis:hover + #vis1{
+            visibility: visible;
+        }
     </style>
     
 </head>
 <body>
+<section>
+    <h1 style="text-align: center;background-color: black;color: white;">Task-1</h1>
     <button class="b1">button</button>
        <div class="bar">
         <div class="bar1"></div>
@@ -73,5 +116,91 @@
        <div class="d3">
         <div class="bar3"></div>
        </div>
+</section>
+<section class="navbar">
+    <h1 style="text-align: center;background-color: black;color: white;">Task-2</h1>
+    <nav>
+        
+            <a class="#one" href="#one">About</a>
+            <a class="two" href="#two">Home</a>
+            <a class="three" href="#three">Contact</a>
+            <a class="four" href="#four">Details</a>
+            <a class="#one" href="#one">About</a>
+            <a class="two" href="#two">Home</a>
+            <a class="three" href="#three">Contact</a>
+            <a class="four" href="#four">Details</a>
+       
+    </nav>
+    <div class="cnt">
+        <h1 style="justify-content: center;">Content Of the Page</h1>
+        <div style="overflow-y: scroll;overflow-x: scroll; width: 400px; height: 260px;">
+            <h2 id="one" style="color: chartreuse;">About</h2>
+            <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos in molestias exercitationem, totam corporis maiores ad labore nam, accusantium recusandae natus laboriosam repellendus beatae voluptatum eius quas enim similique minus!
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores distinctio saepe alias, iure quod at temporibus vel magni nemo ipsum natus sit quis aspernatur non enim veniam nostrum, sint accusantium.
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero distinctio laboriosam temporibus pariatur qui tempora impedit laudantium maiores necessitatibus nobis ab excepturi molestiae expedita maxime, quidem, fuga ipsa quo voluptates.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem quidem modi quod repudiandae vero, incidunt, excepturi, magnam ullam ad sit voluptatibus beatae exercitationem fugiat earum. Expedita aut exercitationem eum nesciunt?
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis nihil, tempora recusandae et excepturi, nulla, necessitatibus natus nesciunt iure veritatis quidem. Dicta omnis aperiam porro, error repellat officiis similique tempora.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi dolores aut eos necessitatibus alias quos vitae explicabo, id quam qui, ducimus deserunt voluptates? Illo dolorem, enim ipsum quidem vero omnis!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus dolore vero magni consequuntur obcaecati recusandae assumenda laborum eaque dolor ducimus, delectus quasi hic, dolorum rem atque sint, ea accusamus qui?
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus suscipit vel asperiores, praesentium beatae molestias similique modi commodi, ducimus corrupti deleniti ad. Eius perspiciatis magni voluptates eos repellat obcaecati veniam!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus corporis ex quo at atque nostrum itaque necessitatibus optio dignissimos iste. Aliquid minus nostrum distinctio, neque ipsam saepe reiciendis temporibus magnam!
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit ipsa temporibus cupiditate tenetur vitae dolores sint explicabo? Dolorum eaque aliquam aspernatur omnis nesciunt eligendi sint suscipit iusto assumenda ratione. Non.
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel, dolor, libero nisi quaerat perferendis numquam suscipit illo mollitia quos aperiam recusandae deleniti quae veniam, ea ratione labore nulla laudantium assumenda!
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium ratione cumque provident eius tempore ut dicta earum consectetur odit, qui autem necessitatibus sunt odio porro ex eligendi facere incidunt enim!
+            </p>
+            <h2 id="two" style="color: chartreuse;">Home</h2>
+            <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos in molestias exercitationem, totam corporis maiores ad labore nam, accusantium recusandae natus laboriosam repellendus beatae voluptatum eius quas enim similique minus!
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores distinctio saepe alias, iure quod at temporibus vel magni nemo ipsum natus sit quis aspernatur non enim veniam nostrum, sint accusantium.
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero distinctio laboriosam temporibus pariatur qui tempora impedit laudantium maiores necessitatibus nobis ab excepturi molestiae expedita maxime, quidem, fuga ipsa quo voluptates.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem quidem modi quod repudiandae vero, incidunt, excepturi, magnam ullam ad sit voluptatibus beatae exercitationem fugiat earum. Expedita aut exercitationem eum nesciunt?
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis nihil, tempora recusandae et excepturi, nulla, necessitatibus natus nesciunt iure veritatis quidem. Dicta omnis aperiam porro, error repellat officiis similique tempora.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi dolores aut eos necessitatibus alias quos vitae explicabo, id quam qui, ducimus deserunt voluptates? Illo dolorem, enim ipsum quidem vero omnis!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus dolore vero magni consequuntur obcaecati recusandae assumenda laborum eaque dolor ducimus, delectus quasi hic, dolorum rem atque sint, ea accusamus qui?
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus suscipit vel asperiores, praesentium beatae molestias similique modi commodi, ducimus corrupti deleniti ad. Eius perspiciatis magni voluptates eos repellat obcaecati veniam!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus corporis ex quo at atque nostrum itaque necessitatibus optio dignissimos iste. Aliquid minus nostrum distinctio, neque ipsam saepe reiciendis temporibus magnam!
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit ipsa temporibus cupiditate tenetur vitae dolores sint explicabo? Dolorum eaque aliquam aspernatur omnis nesciunt eligendi sint suscipit iusto assumenda ratione. Non.
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel, dolor, libero nisi quaerat perferendis numquam suscipit illo mollitia quos aperiam recusandae deleniti quae veniam, ea ratione labore nulla laudantium assumenda!
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium ratione cumque provident eius tempore ut dicta earum consectetur odit, qui autem necessitatibus sunt odio porro ex eligendi facere incidunt enim!
+            </p>
+            <h2 id="three" style="color: chartreuse;">Contact</h2>
+            <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos in molestias exercitationem, totam corporis maiores ad labore nam, accusantium recusandae natus laboriosam repellendus beatae voluptatum eius quas enim similique minus!
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores distinctio saepe alias, iure quod at temporibus vel magni nemo ipsum natus sit quis aspernatur non enim veniam nostrum, sint accusantium.
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero distinctio laboriosam temporibus pariatur qui tempora impedit laudantium maiores necessitatibus nobis ab excepturi molestiae expedita maxime, quidem, fuga ipsa quo voluptates.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem quidem modi quod repudiandae vero, incidunt, excepturi, magnam ullam ad sit voluptatibus beatae exercitationem fugiat earum. Expedita aut exercitationem eum nesciunt?
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis nihil, tempora recusandae et excepturi, nulla, necessitatibus natus nesciunt iure veritatis quidem. Dicta omnis aperiam porro, error repellat officiis similique tempora.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi dolores aut eos necessitatibus alias quos vitae explicabo, id quam qui, ducimus deserunt voluptates? Illo dolorem, enim ipsum quidem vero omnis!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus dolore vero magni consequuntur obcaecati recusandae assumenda laborum eaque dolor ducimus, delectus quasi hic, dolorum rem atque sint, ea accusamus qui?
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus suscipit vel asperiores, praesentium beatae molestias similique modi commodi, ducimus corrupti deleniti ad. Eius perspiciatis magni voluptates eos repellat obcaecati veniam!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus corporis ex quo at atque nostrum itaque necessitatibus optio dignissimos iste. Aliquid minus nostrum distinctio, neque ipsam saepe reiciendis temporibus magnam!
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit ipsa temporibus cupiditate tenetur vitae dolores sint explicabo? Dolorum eaque aliquam aspernatur omnis nesciunt eligendi sint suscipit iusto assumenda ratione. Non.
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel, dolor, libero nisi quaerat perferendis numquam suscipit illo mollitia quos aperiam recusandae deleniti quae veniam, ea ratione labore nulla laudantium assumenda!
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium ratione cumque provident eius tempore ut dicta earum consectetur odit, qui autem necessitatibus sunt odio porro ex eligendi facere incidunt enim!
+            </p>
+            <h2 id="four" style="color: chartreuse;">Details</h2>
+            <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos in molestias exercitationem, totam corporis maiores ad labore nam, accusantium recusandae natus laboriosam repellendus beatae voluptatum eius quas enim similique minus!
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores distinctio saepe alias, iure quod at temporibus vel magni nemo ipsum natus sit quis aspernatur non enim veniam nostrum, sint accusantium.
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero distinctio laboriosam temporibus pariatur qui tempora impedit laudantium maiores necessitatibus nobis ab excepturi molestiae expedita maxime, quidem, fuga ipsa quo voluptates.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem quidem modi quod repudiandae vero, incidunt, excepturi, magnam ullam ad sit voluptatibus beatae exercitationem fugiat earum. Expedita aut exercitationem eum nesciunt?
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis nihil, tempora recusandae et excepturi, nulla, necessitatibus natus nesciunt iure veritatis quidem. Dicta omnis aperiam porro, error repellat officiis similique tempora.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi dolores aut eos necessitatibus alias quos vitae explicabo, id quam qui, ducimus deserunt voluptates? Illo dolorem, enim ipsum quidem vero omnis!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus dolore vero magni consequuntur obcaecati recusandae assumenda laborum eaque dolor ducimus, delectus quasi hic, dolorum rem atque sint, ea accusamus qui?
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus suscipit vel asperiores, praesentium beatae molestias similique modi commodi, ducimus corrupti deleniti ad. Eius perspiciatis magni voluptates eos repellat obcaecati veniam!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus corporis ex quo at atque nostrum itaque necessitatibus optio dignissimos iste. Aliquid minus nostrum distinctio, neque ipsam saepe reiciendis temporibus magnam!
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit ipsa temporibus cupiditate tenetur vitae dolores sint explicabo? Dolorum eaque aliquam aspernatur omnis nesciunt eligendi sint suscipit iusto assumenda ratione. Non.
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel, dolor, libero nisi quaerat perferendis numquam suscipit illo mollitia quos aperiam recusandae deleniti quae veniam, ea ratione labore nulla laudantium assumenda!
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium ratione cumque provident eius tempore ut dicta earum consectetur odit, qui autem necessitatibus sunt odio porro ex eligendi facere incidunt enim!
+            </p>
+        </div>
+    </div>
+
+</section><br>
+<section>
+    <h1 style="text-align: center;background-color: black;color: white;">Task-3</h1>
+    <h1 id="btn" style="padding: 10px;background-color: black;color: white;border-radius: 15px; width: 170px;">Display none</h1>
+    <h1 id="who">World health organization</h1>
+    <h1 id="vis" style="padding: 10px;background-color: black;color: white;border-radius: 15px; width: 170px;">Visibility hidden</h1>
+    <h1 id="vis1">World health organization</h1>
+    <h1>hello</h1>
+</section>
 </body>
 </html>
